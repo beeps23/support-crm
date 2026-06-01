@@ -1,9 +1,7 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
-import axios from "axios";
 
 // ─── API ──────────────────────────────────────────────────────────────────────
-const API = axios.create({ baseURL: "http://127.0.0.1:8000" });
-
+import API from "./api";
 // ─── Constants ────────────────────────────────────────────────────────────────
 const STATUS_OPTIONS = ["All", "Open", "In Progress", "Resolved", "Closed"];
 const SORT_OPTIONS = [
