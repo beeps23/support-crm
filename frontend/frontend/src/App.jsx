@@ -883,7 +883,7 @@ export default function App() {
       const { data } = await API.get("/api/tickets");
       setTickets(data);
     } catch {
-      setError("Could not reach the backend. Make sure FastAPI is running on http://127.0.0.1:8000");
+      setError("Could not reach the backend. Please try again.")
     } finally { setLoading(false); }
   }, []);
 
